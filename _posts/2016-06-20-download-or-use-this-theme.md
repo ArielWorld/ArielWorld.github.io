@@ -16,9 +16,4 @@ keywords: "dummy content"
 - Now, visit `http://your_username.github.io` and you should see your blog running.
 
 ### Use this theme as a project page
-
-If you want to use this theme as a project page blog, you don't need to rename the theme repo into `your_username.github.io`.
-
-All you need to do, open `_config.yml` file, change `baseurl` to your project name which contains this theme, e.g. `baseurl: "/myproject"`.
-
-> Any question/problem, ask me or report it [here](https://github.com/heiswayi/thinkspace/issues).
+博客测试
