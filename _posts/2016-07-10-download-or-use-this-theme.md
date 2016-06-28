@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Here is How to Download/Use This Theme"
+title: "Here This Theme"
 comments: true
-description: "Here is How to Download/Use This Theme"
+description: "Here  This Theme"
 keywords: "dummy content"
 ---
 
