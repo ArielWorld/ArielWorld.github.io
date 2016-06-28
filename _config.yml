@@ -4,12 +4,12 @@ title: "Think"
 title2: "space" # default: ""
 description: "Just another minimalist Jekyll theme that focuses on technical writing."
 keywords: "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace"
-url: http://heiswayi.github.io/thinkspace # site url
-baseurl: "/thinkspace" # apply repo name if use it under gh-pages branch
+url: http://www.guranran.com/ # site url
+baseurl: "/" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
 google_analytics: UA-XXXXX-XX
-repo: http://github.com/heiswayi/thinkspace
+repo: https://github.com/ArielWorld/ArielWorld.github.io
 disqus_shortname: "heiswayi"
 twitter_username: "HeiswayiNrird"
 comments: true
