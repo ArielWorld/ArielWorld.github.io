@@ -16,4 +16,4 @@ keywords: "dummy content"
 - Now, visit `http://your_username.github.io` and you should see your blog running.
 
 ### Use this theme as a project page
-博客测试
+测试密钥
