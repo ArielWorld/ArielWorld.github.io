@@ -4,7 +4,6 @@ title: "Here This Theme"
 comments: true
 description: "Here  This Theme"
 keywords: "dummy content"
-date:2016-07-10
 ---
 
 ### Use this theme as you main site
