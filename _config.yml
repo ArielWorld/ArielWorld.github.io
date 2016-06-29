@@ -10,8 +10,9 @@ baseurl: "http://www.guranran.com" # apply repo name if use it under gh-pages br
 
 google_analytics: UA-XXXXX-XX
 repo: https://github.com/ArielWorld/ArielWorld.github.io
-disqus_shortname: "heiswayi"
-twitter_username: "HeiswayiNrird"
+disqus_shortname: Ariel
+disqus_url: "http://ArielWorld.github.io"
+#twitter_username: "HeiswayiNrird"
 comments: true
 
 # Build settings
