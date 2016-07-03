@@ -5,7 +5,7 @@ bio:                '你好，我是谷冉冉'
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.jpg'
-background:         'assets/img/placeholder-big.jpg'
+background:         'assets/img/background.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_ZN
 url:                http://www.guranran.com
