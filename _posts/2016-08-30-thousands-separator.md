@@ -4,10 +4,7 @@ title:  "js实现千位分隔符"
 date:   2016-08-30
 excerpt: ""
 tag:
-- markdown 
-- sample
 - test
-- jekyll
 comments: true
 ---
 
