@@ -12,7 +12,7 @@ comments: true
 ```js
 function test(num) {
     var num = num.toString();
-    var decimal = "."+num.split('.')[1] || '';//小数部分
+    var decimal = !!num.split('.')[1] ?("."+num.split('.')[1] ):'';//小数部分
     var n = num.split('.')[0] || 0, result = '';
    while (n.length > 3) {
         result = ',' + n.slice(-3) + result;
@@ -22,5 +22,15 @@ function test(num) {
      if(n=="-"){result = n + result.slice(1);}
     return result+decimal;
 } alert(test(123456.789));
+
+//正则法
+function thousandBitSeparator(num) {
+  return num && (num
+    .toString().indexOf('.') != -1 ? num.toString().replace(/(\d)(?=(\d{3})+\.)/g, function($0) {
+      return $0 + ",";
+    }) : num.toString().replace(/(\d)(?=(\d{3})+\b)/g, function($0) {
+      return $0 + ",";
+    }));
+}
 ```
 
