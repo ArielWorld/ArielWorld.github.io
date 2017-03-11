@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "js实现千位分隔符"
+title:  "js实现千位分隔符引发的惨案"
 date:   2016-08-30
 excerpt: ""
 tag:
@@ -8,7 +8,8 @@ tag:
 comments: true
 ---
 
-## 一个测试
+最开始参考网上写的特挫的方法如下，毫无疑问被嘲笑，可是写写又不犯法：
+
 ```js
 function test(num) {
     var num = num.toString();
@@ -22,7 +23,12 @@ function test(num) {
      if(n=="-"){result = n + result.slice(1);}
     return result+decimal;
 } alert(test(123456.789));
+```
 
+
+所以又找了正则的写法
+
+```js
 //正则法
 function thousandBitSeparator(num) {
   return num && (num
