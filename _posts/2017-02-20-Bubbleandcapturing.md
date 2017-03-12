@@ -4,11 +4,11 @@ title:  "先捕获还是先冒泡"
 date:   2017-02-20
 excerpt: ""
 tag:
-- Bubble
-- capturing
+- Bubble and capturing
 comments: true
 ---
 
+先上结论，任何发生在w3c事件模型中的事件，首先进入捕获阶段，直到达到目标元素，再进入冒泡阶段。
 无聊时候的一段小例子，了解冒泡和捕获用。粘贴即可运行。
 
 ```
@@ -56,7 +56,7 @@ comments: true
     var two=document.getElementById('two');  
     var three=document.getElementById('three');  
     var four=document.getElementById('four');
-    //任何发生在w3c事件模型中的事件，首先进入捕获阶段，直到达到目标元素，再进入冒泡阶段。addEventListener第三个参数是true,表示在捕获阶段调用事件处理程序，false表示在冒泡阶段调用事件处理程序。
+    //addEventListener第三个参数是true,表示在捕获阶段调用事件处理程序，false表示在冒泡阶段调用事件处理程序。
     /*//false是冒泡 ，eg:点击four，输出顺序为four,three,two,one; 
     //从被点击的子元素开始执行，一直冒泡到最后一个父元素，执行各父元素的点击事件
     one.addEventListener('click',function(){  

@@ -4,8 +4,7 @@ title:  "div居中问题"
 date:   2017-02-20
 excerpt: ""
 tag:
-- div
-- center
+- div center
 comments: true
 ---
 
