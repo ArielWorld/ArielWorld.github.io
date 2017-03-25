@@ -27,4 +27,13 @@ js快速排序，思想：
 2.所有小于"基准"的元素，都移到"基准"的左边；所有大于"基准"的元素，都移到"基准"的右边。
 3.对"基准"左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止。
 
-
+```js
+var quikSort = function(array){
+    var len = arrar.length;
+    if(len<=1){return array;}
+    var pivotIndex = Math.floor(len/2);
+    var pivot = array.splice(pivotIndex,1)[0];
+    vat left = [],right = [];
+    
+}
+```
