@@ -50,6 +50,7 @@ var quickSort = function(array){
 
 
 //失恋了，心情糟糕的很，下面的就随便写写
+
 冒泡排序:
 比较相邻的元素。如果第一个比第二个大，就交换他们两个。
 对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。在这一点，最后的元素应该会是最大的数。
@@ -126,5 +127,8 @@ function binaryInsertSort(array) {
 ```
 
 //现在有些难过，剩下的以后再研究吧
+
+二分法还可以用来数组查值，不过今儿累了，明日再写。
+
 参考：[排序图解：js排序算法实现](http://www.cnblogs.com/wteam-xq/p/4752610.html)
 [常用排序算法之JavaScript实现](http://www.cnblogs.com/ywang1724/p/3946339.html)
