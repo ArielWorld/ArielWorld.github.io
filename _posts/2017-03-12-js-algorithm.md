@@ -108,7 +108,7 @@ function insertSort(arr){
 function binaryInsertSort(array) {
   for (var i = 1; i < array.length; i++) {
     var key = array[i], left = 0, right = i - 1;
-    //只要满足条件就会循环循环
+    //只要满足条件就会循环
     while (left <= right){
          var middle = parseInt((left + right) / 2);
           if (key < array[middle]){
@@ -129,6 +129,27 @@ function binaryInsertSort(array) {
 //现在有些难过，剩下的以后再研究吧
 
 二分法还可以用来数组查值，不过今儿累了，明日再写。
+
+```js
+//二分查找法
+Array.prototype.binarySearch = function(key){
+    var index = -1,
+        left = 0,
+        right = this.length-1;
+    while(left<=right){
+       var  mid = parseInt((left+right) / 2);
+        if(this[mid] == key){
+            index = mid;
+            break;//切记要跳出循环，否则，会像我一样浏览器崩溃了~~
+        }else if(this[mid]>key){
+            right = mid-1;
+        }else{
+            left = mid+1;
+        }
+    }
+    return index;
+}
+```
 
 参考：[排序图解：js排序算法实现](http://www.cnblogs.com/wteam-xq/p/4752610.html)
 [常用排序算法之JavaScript实现](http://www.cnblogs.com/ywang1724/p/3946339.html)
