@@ -69,7 +69,7 @@ function unique(arr){
         }
         return brr;
     }else{
-        throw Error(arr+' is not Array');
+        throw new Error(arr+' is not Array');
     }
 }
 //[1, "1", 0, "0", undefined, null, NaN, NaN, Object, Object, Array[0], Array[0], /a/, /a/]
@@ -84,7 +84,7 @@ function unique(arr){
         });
         return brr;
     }else{
-        throw Error(arr+' is not Array');
+        throw new Error(arr+' is not Array');
     }
 }
 
@@ -99,7 +99,7 @@ function unique(arr){
         }
         return brr;
     }else{
-        throw Error(arr+' is not Array');
+        throw new Error(arr+' is not Array');
     }
 }
 //[1, "1", 0, "0", undefined, null, Object, Object, Array[0], Array[0], /a/, /a/]
@@ -110,7 +110,7 @@ function unique(arr){
              return arr.indexOf(item) == index;
         });
     }else{
-        throw Error(arr+' is not Array');
+        throw new Error(arr+' is not Array');
     }
 }
 
@@ -133,7 +133,7 @@ function unique(arr){
         }
         return brr;
     }else{
-        throw Error(arr+' is not Array');
+        throw new Error(arr+' is not Array');
     }
 }
 //[1, "1", 0, "0", undefined, null, NaN, Object, Array[0], /a/]
