@@ -96,7 +96,7 @@ var fib = function(){
 
 //若单纯只要计算到第n个
 function fib(n){
-    if(n<2){
+    if(n<=2){
         return 1;
     }
     var a=1,b=1;

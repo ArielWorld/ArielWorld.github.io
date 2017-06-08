@@ -7,7 +7,6 @@ tag:
 - 数组去重
 comments: true
 ---
-ES6方法最好，可是面试官不满意~~
 
 以var arr = [1,1,'1','1',0,0,'0','0',undefined,undefined,null,null,NaN,NaN,{},{},[],[],/a/,/a/];为例测试各去重方法。
 
