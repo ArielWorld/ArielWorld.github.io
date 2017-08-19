@@ -34,3 +34,26 @@ comments: true
 </html>
 ```
 
+
+```
+/*flex布局*/
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.container div{
+    width:200px;
+    height:100px;
+    background:#ff0;
+}
+/*或者利用transform*/
+div{
+    position:relative;
+    width:200px;
+    height:200px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+```
