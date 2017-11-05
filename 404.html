@@ -8,4 +8,81 @@ comments: false
 <p>If you've followed a link expecting something to be here, you can <a href="mailto:{{ site.email }}?subject=Page%20not%20found">contact me</a>.</p>
  -->
 <canvas id='canvas' width="400px"  height="400px"></canvas>
-    <img src="rhino.jpg">
+<img style='display: none'  src="rhino.jpg">
+
+
+<script type="text/javascript">
+  var EventUtil = {
+    addEvent:function(element,type,handler){
+            if(element.addEventListener){
+                element.addEventListener(type,handler,false);
+            }else if(element.attachEvent){
+                element.attachEvent('on'+type,handler);
+            }else{
+                element['on'+type] = handler;
+            }
+        },
+    removEvent:function(element,type,handler){
+            if(element.removeEventListener){
+                element.removeEventListener(type,handler,false);
+            }else if(element.detachEvent){
+                element.detachEvent('on'+type,handler);
+            }else{
+                element['on'+type] = null;
+            }
+        },
+    getEvent: function(e){
+            return e||window.e;
+        },
+    getTarget: function(e){
+            return e.target||e.srcElement;
+        },
+  
+    stoPropagation: function(e){
+            if(e.stoPropagation){
+                e.stoPropogation();
+            }else{
+                e.cancelBubble = true;
+            }
+        },
+    preventDefault: function(e){
+        if(e.preventDefault){
+            e.preventDefault();
+        }else{
+            e.returnValue = false;
+        }
+    }
+};
+
+EventUtil.addEvent(window,'load',function(){
+    var canvas = document.getElementById('canvas')
+    if(canvas.getContext){
+        var context = canvas.getContext('2d'),
+        img = document.images[0],
+        imageData,data,i,len,average,
+        red,green,blue,alpha;
+        context.drawImage(img,0,0);
+
+
+        img.crossOrigin = "Anonymous";
+        imageData = context.getImageData(0,0,img.width,img.height);
+        data = imageData.data;
+
+        for(i = 0,len = data.length;i <len;i+=4){
+            red = data[i];
+            green = data[i+1];
+            blue = data[i+2];
+            alpha = data[i+3];
+
+            ave = Math.floor((red+green+blue)/3);
+            data[i] = ave;
+            data[i+1] = ave;
+            data[i+2] = ave;
+        }
+
+        imageData.data = data;
+        context.putImageData(imageData,0,0)
+    }
+})
+
+</script>
